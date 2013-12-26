@@ -9,7 +9,7 @@
     <meta charset="utf-8">
 
     <title>Backbone Tunes</title>
-    <meta name="author" content="David Goodlad <david@goodlad.ca>">
+    <meta name="author" content="Brittany Yoon <b@sassyha.sh>">
 
     <link rel="stylesheet" href="style/screen.css" media="screen, projection">
     <link rel="stylesheet" href="style/fancypants.css" media="screen, projection">
@@ -18,16 +18,16 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/underscore.js"></script>
     <script src="js/vendor/backbone.js"></script>
-    <script src="js/Tunes.js"></script>
+    <script src="js/Shades.js"></script>
 
-    <script type="text/template" id="album-template">
-      <span class="album-title"><%= title %></span>
-      <span class="artist-name"><%= artist %></span>
-      <ol class="tracks">
-        <% _.each(tracks, function(track) { %>
-          <li><%= track.title %></li>
+    <script type="text/template" id="collection-template">
+      <span class="collection-name"><%= name %></span>
+      <span class="collection-brand"><%= brand %></span>
+      <ul class="colors">
+        <% _.each(colors, function(color) { %>
+          <li><%= color.name %></li>
         <% }); %>
-      </ol>
+      </ul>
     </script>
 
   </head>
