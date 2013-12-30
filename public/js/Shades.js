@@ -1,6 +1,20 @@
 (function($) {
 
-  window.Collection = Backbone.Model.extend({});
+  window.Collection = Backbone.Model.extend({
+    isFirstColor: function(index) {
+      return index == 0;
+    },
+    isLastColor: function(index) {
+      return index >= this.get('colors').length -1;
+    },
+
+    colorUrlAtIndex: function(index) {
+      if (this.get("colors").length >= index) {
+        return this.get("colors")[index].url;
+      }
+    },
+  });
+  
   window.CollectionView = Backbone.View.extend({
     tagName: "li",
     className: "collection",
