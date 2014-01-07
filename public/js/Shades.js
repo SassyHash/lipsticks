@@ -12,12 +12,21 @@
       if (this.get("colors").length >= index) {
         return this.get("colors")[index].url;
       }
+
+      return null;
     },
   });
   
+  window.Collections = Backbone.Collection.extend({
+    model: Collection,
+    url: '/collections',
+    
+  });
+
   window.CollectionView = Backbone.View.extend({
     tagName: "li",
     className: "collection",
+
     initialize: function() {
       _.bindAll(this, 'render');
       this.model.bind('change', this.render);
@@ -29,6 +38,18 @@
       return this;
     } 
 
+  });
+
+  window.LibraryCollectionView = CollectionView.extend({
+
+  });
+
+  window.LibraryView = Backbone.View.extend({
+    initialize: function() {
+        _.bindAll(this, 'render');
+        this.template = _.template($('#library-template').html());
+        
+    }
   });
 
 })(jQuery);

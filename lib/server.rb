@@ -7,13 +7,9 @@ get "/" do
   send_file "public/index.html"
 end
 
-get "/blank" do
-  send_file "public/index.html"
-end
-
-get "/albums" do
+get "/collections" do
   content_type "application/json"
-  send_file "public/albums.json"
+  send_file "public/collections.json"
 end
 
 get "/favicon.ico" do

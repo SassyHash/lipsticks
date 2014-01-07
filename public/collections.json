@@ -1,0 +1,53 @@
+[{
+    "name": "Fall 2012",
+    "brand": "Chanel",
+    "colors": [{
+        "name": "109",
+        "url": "/colors/blue.mp3"
+    },
+    {
+        "name": "99",
+        "url": "/colors/jazz.mp3"
+    },
+    {
+        "name": "95",
+        "url": "/colors/minimalish.mp3"
+    },
+    {
+        "name": "88",
+        "url": "/colors/slower.mp3"
+    },
+    {
+        "name": "109",
+        "url": "/colors/blue.mp3"
+    },
+    {
+        "name": "55",
+        "url": "/colors/jazz.mp3"
+    },
+    {
+        "name": "39",
+        "url": "/colors/minimalish.mp3"
+    }]
+},
+
+{
+    "name": "Viva Glam",
+    "brand": "MAC",
+    "colors": [{
+        "name": "Lady Gaga",
+        "url": "/colors/blue.mp3"
+    },
+    {
+        "name": "Dita Von Teese",
+        "url": "/colors/jazz.mp3"
+    },
+    {
+        "name": "Nicki Minaj",
+        "url": "/colors/minimalish.mp3"
+    },
+    {
+        "name": "Viva Glam 1",
+        "url": "/colors/slower.mp3"
+    }]
+}]

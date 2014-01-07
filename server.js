@@ -28,9 +28,9 @@ app.get('/', function (req, res) {
 app.get('/blank', function (req, res) {
   res.sendfile(__dirname + '/public/index.html');
 });
-app.get('/albums', function (req, res) {
+app.get('/collections', function (req, res) {
   res.contentType('application/json');
-  res.sendfile(__dirname + '/public/albums.json');
+  res.sendfile(__dirname + '/public/collections.json');
 });
 
 var server = app.listen(app.settings.port);
