@@ -1,16 +1,3 @@
-Simple Model: A backbone.js demo
-==================================
+# 50 Shades of Red
 
-This demo loads only a simple model and view. It displays no content and must be driven from the command line.
-
-USAGE
-=====
-
-Run:
-
-    rake server
-
-Visit the webserver at:
-
-    http://localhost:9292
-
+### lipstick swatcher with backbone.js
